@@ -31,12 +31,12 @@ Contain the basics on ML. The second part is a broad description of ML pipeline.
 
 ## Data Engineering
 
- Visualization with _Altair_ notebook collection 
+ * Visualization with _Altair_ notebook collection 
 [Visualization with Vega and Altair](https://github.com/altair-viz/altair-tutorial.git)
 <p><img align='left' src="./imgs/altair-gallery.jpg" alt='Tensorflow logo' height="200" width="700"></p><br clear='left'>
 
-https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
-https://towardsdatascience.com/15-data-exploration-techniques-to-go-from-data-to-insights-93f66e6805df
+* https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
+* https://towardsdatascience.com/15-data-exploration-techniques-to-go-from-data-to-insights-93f66e6805df
 
 ## Model Engineering
 
