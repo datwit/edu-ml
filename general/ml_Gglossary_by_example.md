@@ -26,7 +26,7 @@ In binary classification, accuracy has the following definition:
 $$\text{Accuracy} = \frac{\text{True Positives} + \text{True
 Negatives}} {\text{Total Number Of Examples}}$$
 
-See [true positive]() and true negative.
+See [true positive](#true positive (TP)) and [true negative](#true negative (TN)).
 
 ## Activation Function
 
@@ -39,6 +39,11 @@ passes an output value (typically nonlinear) to the next layer.
 A sophisticated gradient descent algorithm that rescales the gradients
 of each parameter, effectively giving each parameter an independent
 learning rate. For a full explanation, see [this paper](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf).
+
+## [Attention](https://en.wikipedia.org/wiki/Attention_(machine_learning))
+
+In the context of neural networks, attention is a technique that mimics 
+cognitive attention.
 
 ## AUC (Area under the ROC Curve)
 
@@ -79,7 +84,7 @@ is 1, while the batch size of a mini-batch is usually between 10 and
 1000. Batch size is usually fixed during training and inference;
 however, TensorFlow does permit dynamic batch sizes.
 
-## bias
+## [bias](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
 
 An intercept or offset from an origin. Bias (also known as the bias
 term) is referred to as b or w0 in machine learning models. For
@@ -222,7 +227,7 @@ mistakenly predict 9 instead of 4, or 1 instead of 7.
 Confusion matrices contain sufficient information to calculate a
 variety of performance metrics, including precision and recall.
 
-continuous feature
+## continuous feature
 
 A floating-point feature with an infinite range of possible values.
 Contrast with discrete feature.
@@ -319,6 +324,14 @@ An Estimator that you write yourself by following these directions.
 Contrast with pre-made Estimators.
 
 # D
+
+## [data catalog](https://www.alation.com/blog/what-is-a-data-catalog/)
+
+A Data Catalog is a collection of metadata, combined with data 
+management and search tools, that helps analysts and other data users 
+to find the data that they need, serves as an inventory of available 
+data, and provides information to evaluate fitness data for intended 
+uses.
 
 ## data set
 
@@ -656,18 +669,20 @@ the loss on the training set.
 The "knobs" that you tweak during successive runs of training a model.
 For example, learning rate is a hyperparameter.
 
-## Contrast with parameter.
+Contrast with parameter.
 
-hyperplane
+## hyperplane
 
 A boundary that separates a space into two subspaces. For example, a
 line is a hyperplane in two dimensions and a plane is a hyperplane in
 three dimensions. More typically in machine learning, a hyperplane is
 the boundary separating a high-dimensional space. Kernel Support Vector
 Machines use hyperplanes to separate positive classes from negative
-classes, often in a very high-dimensional space. I
+classes, often in a very high-dimensional space. 
 
-independently and identically distributed (i.i.d)
+# I
+
+## independently and identically distributed (i.i.d)
 
 Data drawn from a distribution that doesn't change, and where each
 value drawn doesn't depend on values that have been drawn previously.
@@ -679,7 +694,7 @@ that brief window and one person's visit is generally independent of
 another's visit. However, if you expand that window of time, seasonal
 differences in the web page's visitors may appear.
 
-inference
+## inference
 
 In machine learning, often refers to the process of making predictions
 by applying the trained model to unlabeled examples. In statistics,
@@ -687,30 +702,30 @@ inference refers to the process of fitting the parameters of a
 distribution conditioned on some observed data. (See the Wikipedia
 article on statistical inference.)
 
-input function
+## input function
 
 In TensorFlow, a function that returns input data to the training,
 evaluation, or prediction method of an Estimator. For example, the
 training input function returns a batch of features and labels from the
 training set.
 
-input layer
+## input layer
 
 The first layer (the one that receives the input data) in a neural
 network.
 
-instance
+## instance
 
 Synonym for example.
 
-interpretability
+## interpretability
 
 The degree to which a model's predictions can be readily explained.
 Deep models are often non-interpretable; that is, a deep model's
 different layers can be hard to decipher. By contrast, linear
 regression models and wide models are typically far more interpretable.
 
-inter-rater agreement
+## inter-rater agreement
 
 A measurement of how often human raters agree when doing a task. If
 raters disagree, the task instructions may need to be improved. Also
@@ -718,19 +733,21 @@ sometimes called inter-annotator agreement or inter-rater reliability.
 See also Cohen's kappa, which is one of the most popular inter-rater
 agreement measurements.
 
-iteration
+## iteration
 
 A single update of a model's weights during training. An iteration
 consists of computing the gradients of the parameters with respect to
-the loss on a single batch of data. K
+the loss on a single batch of data. 
 
-Keras
+# K
+
+## Keras
 
 A popular Python machine learning API. Keras runs on several deep
 learning frameworks, including TensorFlow, where it is made available
 as tf.keras.
 
-Kernel Support Vector Machines (KSVMs)
+## Kernel Support Vector Machines (KSVMs)
 
 A classification algorithm that seeks to maximize the margin between
 positive and negative classes by mapping input data vectors to a higher
@@ -738,15 +755,17 @@ dimensional space. For example, consider a classification problem in
 which the input data set consists of a hundred features. In order to
 maximize the margin between positive and negative classes, KSVMs could
 internally map those features into a million-dimension space. KSVMs
-uses a loss function called hinge loss. L
+uses a loss function called hinge loss. 
 
-L1 loss
+# L
+
+## L1 loss
 
 Loss function based on the absolute value of the difference between the
 values that a model is predicting and the actual values of the labels.
 L1 loss is less sensitive to outliers than L2 loss.
 
-L1 regularization
+## L1 regularization
 
 A type of regularization that penalizes weights in proportion to the
 sum of the absolute values of the weights. In models relying on sparse
@@ -754,11 +773,11 @@ features, L1 regularization helps drive the weights of irrelevant or
 barely relevant features to exactly 0, which removes those features
 from the model. Contrast with L2 regularization.
 
-L2 loss
+## L2 loss
 
 See squared loss.
 
-L2 regularization
+## L2 regularization
 
 A type of regularization that penalizes weights in proportion to the
 sum of the squares of the weights. L2 regularization helps drive
@@ -766,7 +785,7 @@ outlier weights (those with high positive or low negative values)
 closer to 0 but not quite to 0. (Contrast with L1 regularization.) L2
 regularization always improves generalization in linear models.
 
-label
+## label
 
 In supervised learning, the "answer" or "result" portion of an example.
 Each example in a labeled data set consists of one or more features and
@@ -777,19 +796,19 @@ detection dataset, the features might include the subject line, the
 sender, and the email message itself, while the label would probably be
 either "spam" or "not spam."
 
-labeled example
+## labeled example
 
 An example that contains features and a label. In supervised training,
 models learn from labeled examples.
 
-lambda
+## lambda
 
 Synonym for regularization rate.
 
 (This is an overloaded term. Here we're focusing on the term's
 definition within regularization.)
 
-layer
+## layer
 
 A set of neurons in a neural network that process a set of input
 features, or the output of those neurons.
@@ -799,7 +818,7 @@ take Tensors and configuration options as input and produce other
 tensors as output. Once the necessary Tensors have been composed, the
 user can convert the result into an Estimator via a model function.
 
-Layers API (tf.layers)
+## Layers API (tf.layers)
 
 A TensorFlow API for constructing a deep neural network as a
 composition of layers. The Layers API enables you to build different
@@ -811,12 +830,12 @@ types of layers, such as:
 When writing a custom Estimator, you compose Layers objects to define
 the characteristics of all the hidden layers.
 
-The Layers API follows the [Keras](#Keras] layers API conventions. That
+The Layers API follows the [Keras](#Keras) layers API conventions. That
 is, aside from a different prefix, all functions in the Layers API have
 the same names and signatures as their counterparts in the Keras layers
 API.
 
-learning rate
+## learning rate
 
 A scalar used to train a model via gradient descent. During each
 iteration, the gradient descent algorithm multiplies the learning rate
@@ -824,16 +843,16 @@ by the gradient. The resulting product is called the gradient step.
 
 Learning rate is a key hyperparameter.
 
-least squares regression
+## least squares regression
 
 A linear regression model trained by minimizing L2 Loss.
 
-linear regression
+## linear regression
 
 A type of regression model that outputs a continuous value from a
 linear combination of input features.
 
-logistic regression
+## logistic regression
 
 A model that generates a probability for each possible discrete label
 value in classification problems by applying a sigmoid function to a
@@ -842,19 +861,27 @@ classification problems, it can also be used in multi-class
 classification problems (where it becomes called multi-class logistic
 regression or multinomial regression).
 
-Log Loss
+## Log Loss
 
 The loss function used in binary logistic regression.
 
-loss
+## loss
 
 A measure of how far a model's predictions are from its label. Or, to
 phrase it more pessimistically, a measure of how bad the model is. To
 determine this value, a model must define a loss function. For example,
 linear regression models typically use mean squared error for a loss
-function, while logistic regression models use Log Loss. M
+function, while logistic regression models use Log Loss. 
 
-machine learning
+## [Long short-term memory (LSTM)](https://en.wikipedia.org/wiki/Long_short-term_memory)
+
+is an artificial recurrent neural network (RNN) architecture[1] used in 
+the field of deep learning. Unlike standard feedforward neural networks, 
+LSTM has feedback connections.
+
+# M
+
+## machine learning
 
 A program or system that builds (trains) a predictive model from input
 data. The system uses the learned model to make useful predictions from
@@ -862,26 +889,26 @@ new (never-before-seen) data drawn from the same distribution as the
 one used to train the model. Machine learning also refers to the field
 of study concerned with these programs or systems.
 
-Mean Squared Error (MSE)
+## Mean Squared Error (MSE)
 
 The average squared loss per example. MSE is calculated by dividing the
 squared loss by the number of examples. The values that TensorFlow
 Playground displays for "Training loss" and "Test loss" are MSE.
 
-metric
+## metric
 
 A number that you care about. May or may not be directly optimized in a
 machine-learning system. A metric that your system tries to optimize is
 called an objective.
 
-Metrics API (tf.metrics)
+## Metrics API (tf.metrics)
 
 A TensorFlow API for evaluating models. For example,
 tf.metrics.accuracy determines how often a model's predictions match
 labels. When writing a custom Estimator, you invoke Metrics API
 functions to specify how your model should be evaluated.
 
-mini-batch
+## mini-batch
 
 A small, randomly selected subset of the entire batch of examples run
 together in a single iteration of training or inference. The batch size
@@ -889,17 +916,17 @@ of a mini-batch is usually between 10 and 1,000. It is much more
 efficient to calculate the loss on a mini-batch than on the full
 training data.
 
-mini-batch stochastic gradient descent (SGD)
+## mini-batch stochastic gradient descent (SGD)
 
 A gradient descent algorithm that uses mini-batches. In other words,
 mini-batch SGD estimates the gradient based on a small subset of the
 training data. Vanilla SGD uses a mini-batch of size 1.
 
-ML
+## ML
 
 Abbreviation for machine learning.
 
-model
+## model
 
 The representation of what an ML system has learned from the training
 data. This is an overloaded term, which can have either of the
@@ -909,11 +936,11 @@ following two related meanings:
     prediction will be computed. The particular weights and biases of
     that TensorFlow graph, which are determined by training.
 
-model training
+## model training
 
 The process of determining the best model.
 
-Momentum
+## Momentum
 
 A sophisticated gradient descent algorithm in which a learning step
 depends not only on the derivative in the current step, but also on the
@@ -922,7 +949,7 @@ involves computing an exponentially weighted moving average of the
 gradients over time, analogous to momentum in physics. Momentum
 sometimes prevents learning from getting stuck in local minima.
 
-multi-class classification
+## multi-class classification
 
 Classification problems that distinguish among more than two classes.
 For example, there are approximately 128 species of maple trees, so a
@@ -930,12 +957,13 @@ model that categorized maple tree species would be multi-class.
 Conversely, a model that divided emails into only two categories (spam
 and not spam) would be a binary classification model.
 
-multinomial classification
+## multinomial classification
 
 Synonym for multi-class classification.
-N
 
-NaN trap
+# N
+
+## NaN trap
 
 When one number in your model becomes a NaN during training, which
 causes many or all other numbers in your model to eventually become a
@@ -943,7 +971,7 @@ NaN.
 
 NaN is an abbreviation for "Not a Number."
 
-negative class
+## negative class
 
 In binary classification, one class is termed positive and the other is
 termed negative. The positive class is the thing we're looking for and
@@ -951,27 +979,27 @@ the negative class is the other possibility. For example, the negative
 class in a medical test might be "not tumor." The negative class in an
 email classifier might be "not spam." See also positive class.
 
-neural network
+## neural network
 
 A model that, taking inspiration from the brain, is composed of layers
 (at least one of which is hidden) consisting of simple connected units
 or neurons followed by nonlinearities.
 
-neuron
+## neuron
 
 A node in a neural network, typically taking in multiple input values
 and generating one output value. The neuron calculates the output value
 by applying an activation function (nonlinear transformation) to a
 weighted sum of input values.
 
-node
+## node
 
 An overloaded term that means either of the following:
 
     A neuron in a hidden layer.
     An operation in a TensorFlow graph.
 
-normalization
+## normalization
 
 The process of converting an actual range of values into a standard
 range of values, typically -1 to +1 or 0 to 1. For example, suppose the
@@ -980,7 +1008,7 @@ and division, you can normalize those values into the range -1 to +1.
 
 See also scaling.
 
-numerical data
+## numerical data
 
 Features represented as integers or real-valued numbers. For example,
 in a real estate model, you would probably represent the size of a
@@ -1004,10 +1032,12 @@ should be represented as categorical data instead.
 
 Numerical features are sometimes called continuous features.
 
-numpy
+## numpy
 
 An open-source math library that provides efficient array operations in
-Python. pandas is built on numpy. O
+Python. pandas is built on numpy. 
+
+# O
 
 objective
 
@@ -1541,17 +1571,17 @@ anomaly detection. For example, you could use time series analysis to
 forecast the future sales of winter coats by month based on historical
 sales data.
 
-training
+## training
 
 The process of determining the ideal parameters comprising a model.
 
-training set
+## training set
 
 The subset of the data set used to train a model.
 
 Contrast with validation set and test set.
 
-transfer learning
+## transfer learning
 
 Transferring information from one machine learning task to another. For
 example, in multi-task learning, a single model solves multiple tasks,
@@ -1565,34 +1595,41 @@ Most machine learning systems solve a single task. Transfer learning is
 a baby step towards artificial intelligence in which a single program
 can solve multiple tasks.
 
-true negative (TN)
+## [Transformer](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model))
+
+The Transformer is a deep learning model introduced in 2017 that 
+utilizes the mechanism of [attention](#attention), weighing the influence of 
+different parts of the input data.
+
+## true negative (TN)
 
 An example in which the model correctly predicted the negative class.
 For example, the model inferred that a particular email message was not
 spam, and that email message really was not spam.
 
-true positive (TP)
+## true positive (TP)
 
 An example in which the model correctly predicted the positive class.
 For example, the model inferred that a particular email message was
 spam, and that email message really was spam.
 
-true positive rate (TP rate)
+## true positive rate (TP rate)
 
 Synonym for recall. That is:
 $$\text{True Positive Rate} = \frac{\text{True Positives}} {\text{True
 Positives} + \text{False Negatives}}$$
 
 True positive rate is the y-axis in an ROC curve.
-U
 
-unlabeled example
+# U
+
+## unlabeled example
 
 An example that contains features but no label. Unlabeled examples are
 the input to inference. In semi-supervised and unsupervised learning,
 unlabeled examples are used during training.
 
-unsupervised machine learning
+## unsupervised machine learning
 
 Training a model to find patterns in a data set, typically an unlabeled
 data set.
@@ -1613,17 +1650,19 @@ contents of millions of shopping carts might reveal that shopping carts
 containing lemons frequently also contain antacids.
 
 Compare with supervised machine learning.
-V
 
-validation set
+# V
+
+## validation set
 
 A subset of the data set—disjunct from the training set—that you use to
 adjust hyperparameters.
 
 Contrast with training set and test set.
-W
 
-weight
+# W
+
+## weight
 
 A coefficient for a feature in a linear model, or an edge in a deep
 network. The goal of training a linear model is to determine the ideal
