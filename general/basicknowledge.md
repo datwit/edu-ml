@@ -5,6 +5,7 @@ Basic Knowledge
 
 	1. [Linear Algebra, Optimization, Probability](./media/DATA/PyData/pyBooksData/04_ML/Math_4_ML_UC_Berkeley_CS_189-289A.pdf)
 	2. Statistics
+        * [A/B Testing](https://www.kdnuggets.com/2021/04/ab-testing-7-common-questions-answers-data-science-interviews-1.html)
 
 ## Data Aspects
 

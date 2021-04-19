@@ -10,7 +10,7 @@ The order here is important, is the way in which I see the process:
 
 Contain the basics on ML. The second part is a broad description of ML pipeline. And the last part is well detailed (by chapter) exposition of Real World Case Studies.
 
-#### [Machine Learning Glossary by Example](./mapmind/ml_Gglossary_by_example.md), based on Google ML Glossary
+#### [Machine Learning Glossary by Example](./general/ml_Gglossary_by_example.md), based on Google ML Glossary
 
 ## General Pipeline
 
@@ -19,13 +19,13 @@ Contain the basics on ML. The second part is a broad description of ML pipeline.
 - Data Analysis/Exploring
     1. Feature Extraction
     2. Dimensionality Reduction
-    3. [Outliers Treatment or Anomaly Detection](./mapmind/data-preparation/outliers.md)
+    3. [Outliers Treatment or Anomaly Detection](./data-preparation/outliers.md)
     4. Testing & Validation
-    5. Hyper-param optimization
-    6. Feature Selection
-    7. Data Plotting/Visualization
+    5. Feature Selection
+    6. Data Plotting/Visualization
 - Building Models
-- Model Evaluation
+    1. [Hyper-param optimization](./modeling/hyperp_optimization.md)
+    2. Model Evaluation
 - [__Deploying Models into Apps__](2015_Sebastian_Raschka-Python_ML.pdf)
 - Monitoring Models (Feedback)
 
@@ -40,19 +40,21 @@ https://towardsdatascience.com/15-data-exploration-techniques-to-go-from-data-to
 
 ## Model Engineering
 
+* [NN From the ground up](https://www.youtube.com/watch?v=aircAruvnKk)
+
 ## ML Deployment
 
 * [Amazon Cloud Free Services](https://aws.amazon.com/free/free-tier/)
 
 ## General Topics
 
-### [Basic Knowledge](./mapmind/basicknowledge.html)
+### [Basic Knowledge](./general/basicknowledge.md)
 
-### [DataSci Skills](./mapmind/skills.html)
+### [DataSci Skills](./general/skills.md)
 
 <p><img align='left' src="./imgs/DataSci_Skills_Moscu_Metro.png" alt='Tensorflow logo' height="768" width="1024"></p><br clear='left'>
 
-### [Corpus](./mapmind/corpus.html)
+### [Corpus](./general/corpus.md)
 
 ### Applications - Products
 - Text Classifier
@@ -61,11 +63,11 @@ https://towardsdatascience.com/15-data-exploration-techniques-to-go-from-data-to
     2. [Afinity Analysis: Apriori algthm](2015_Learning_Data_Mining_with_Py.pdf)
     3. [The million Song Dataset Example](2018_Practical_ML_with_Py.pdf)
 
-### [Technologies](.mapmind/techs.html)
+### [Technologies](./general/techs.md)
 
-### [Events](.mapmind/events.html)
+### [Events](./general/events.md)
 
-### [Certifications](.mapmind/certifications.html)
+### [Certifications](./general/certifications.md)
 
 ### DataTypes
 
@@ -89,6 +91,9 @@ https://towardsdatascience.com/15-data-exploration-techniques-to-go-from-data-to
 - How to find [DataSci Influencers](https://app.cronycle.com/discovery/topics/Data%20Science?activeTab=influencers)
 
 ## Future Readings
+
+Applications of ML or future readings could be find in:
+* [agriculture](./applications/agriculture.md)
 
 - Fix this Lack of parallelization of LSTM
 - Learning Long Term Dependency remains open
